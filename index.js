@@ -9,7 +9,7 @@ function css3Assert(instance) {
     try {
       const element = await instance.evaluateHandle(
         getElementBySizzle,
-        selector,
+        selector
       );
       if (element.asElement()) {
         return true
@@ -25,7 +25,7 @@ function css3Assert(instance) {
   const getElement = async (selector) => {
     return await instance.evaluateHandle(
       getElementBySizzle,
-      selector,
+      selector
     );
   };
 
